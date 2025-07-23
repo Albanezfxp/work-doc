@@ -1,0 +1,134 @@
+#header-container {
+    position: fixed; 
+    top: 0;         
+    left: 0;        
+    width: 98%;     
+    z-index: 1000;  
+    background-color: transparent; 
+    display: flex;
+    height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px 0px 15px;
+    transition: background-color 0.4s ease-in-out;
+}
+
+#header-container.scrolled {
+    background-color: #141414; 
+}
+
+#header-links {
+    display: flex;
+    gap: 20px;
+}
+
+.header-link a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 15px;
+}
+
+.header-link a:hover {
+    color: rgb(248, 252, 255);
+    border-bottom: 1px solid rgb(248, 252, 255);
+    padding-bottom: 3px;
+    transition: 100ms ease-in;
+}
+
+#header-logo > img {
+    width: 200px;
+}
+.search-and-dropdown-container {
+    position: relative; 
+    display: flex; 
+    align-items: center;
+    gap: 10px; 
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 0.9em;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.search-input::placeholder {
+    color: #bbb;
+}
+
+.search-input:focus {
+    border-color: #2a77b0;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.search-button {
+    background-color: #2a77b0;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 15px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 0.9em;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: #f40612;
+}
+
+.search-dropdown { 
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    width: 100%;
+    min-width: 250px;
+    max-width: 400px; 
+    background-color: #222; 
+    border: 1px solid #444;
+    max-height: 300px;
+    overflow-y: auto; 
+    z-index: 1001; 
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    margin-top: 5px; 
+    padding: 0;
+    list-style: none; 
+}
+
+.search-dropdown li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 12px;
+    border-bottom: 1px solid #333;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.2s ease;
+}
+
+.search-dropdown li:last-child {
+    border-bottom: none; 
+}
+
+.search-dropdown li:hover {
+    background-color: #333; 
+}
+
+.dropdown-poster {
+    width: 40px;
+    height: 60px; 
+    object-fit: cover;
+    border-radius: 3px;
+    flex-shrink: 0; 
+}
