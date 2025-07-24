@@ -33,7 +33,7 @@ export declare const movieDetail: Array<{
     BoxOffice: string;
     Production: string;
     Website: string;
-    Plot: string; // Adicionei o Plot aqui, pois ele está no movieDetail
-    Language: string; // Adicionei o Language aqui
-    Country: string; // Adicionei o Country aqui
+    Plot: string; 
+    Language: string; 
+    Country: string; 
 }>;

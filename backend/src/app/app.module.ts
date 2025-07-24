@@ -1,5 +1,4 @@
 import { MoviesService } from './../movies/movies.service';
-// src/app.module.ts (exemplo de como ficaria)
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';

@@ -1,6 +1,7 @@
 import MovieCard from './MovieCard';
 import '../styles/MovieSection.css'; 
 
+// Função verifica se existe filme para a sessão. Caso não exista, o componente não é construido. 
 function MovieSection({ title, movies }: any) {
   if (!movies || movies.length === 0) {
     return null; 

@@ -5,8 +5,9 @@ import { search, movieDetail } from "../../data/movies"
 @Injectable()
 export class MoviesService {
 
-    private readonly moviesList = search;
+    private readonly moviesList  = search;
     private readonly moviesDetails = movieDetail;
+
 
     //Retorna a lista completa de filmes para pesquisa.
     getSearchMovies(searchItem?: string) {

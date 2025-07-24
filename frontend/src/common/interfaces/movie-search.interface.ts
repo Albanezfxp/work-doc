@@ -1,4 +1,5 @@
-// Interface para a forma que os filmes retornam no pesquisar.
+
+// Interface para os filmes que retornam no pesquisar.
 export interface MovieSearch {
   Title: string;
   Year: string;

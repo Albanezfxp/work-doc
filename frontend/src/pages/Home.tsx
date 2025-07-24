@@ -4,7 +4,7 @@ import axios from "axios";
 import MovieSection from "../components/MovieSection";
 import Header from "../components/Header";
 import type { MovieSearch } from "../common/interfaces/movie-search.interface";
-import videoBanner from "../assets/Star Wars Vintage GIF.mp4"
+import videoBanner from "../assets/gif/Star Wars Vintage GIF.mp4"
 import "../styles/Home.css"
 
 export default function Home() {

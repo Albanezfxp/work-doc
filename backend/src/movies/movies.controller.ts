@@ -1,9 +1,4 @@
-import {
-  Controller,
-  Get,
-  Param,
-  Query,
-} from '@nestjs/common';
+import { Controller,  Get,  Param,  Query,} from '@nestjs/common';
 import { MoviesService } from './movies.service';
 
 @Controller('api/movies')
@@ -11,7 +6,7 @@ export class MoviesController {
   constructor(private readonly moviesService: MoviesService) {}
    
   //Retorna uma lista de filmes para pesquisa.
-   //Pode ser filtrada opcionalmente por um termo de busca no título.
+  //Pode ser filtrada opcionalmente por um termo de busca no título.
   @Get('')
   getMoviesForSearch(@Query('search') searchTerm?: string) {
     return this.moviesService.getSearchMovies(searchTerm);

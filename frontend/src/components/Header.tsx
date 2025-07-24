@@ -5,7 +5,7 @@ import HeaderLink from "./HeaderLink";
 import SearchDropdownItem from "./SearchDropdownItem";
 import type { MovieSearch } from "../common/interfaces/movie-search.interface";
 import notFoundPoster from "../assets/notFoundImages/Gemini_Generated_Image_ocndxgocndxgocnd.png"
-import logoWorkDoc from "../assets/Graffiti_Urban_Grunge_Brand_Logo-removebg-preview.png";
+import logoWorkDoc from "../assets/logo´s/Graffiti_Urban_Grunge_Brand_Logo-removebg-preview.png";
 import "../styles/Header.css";
 
 export default function Header() {
@@ -68,7 +68,7 @@ export default function Header() {
                   setSearchResults([]);
                   setShowDropdown(false);
               });
-      }, 300); // O atraso de 300ms antes de executar a busca (debounce).
+      }, 300); 
 
       // Retorna uma função de limpeza.
       return () => {
